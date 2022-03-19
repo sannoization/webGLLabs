@@ -2,20 +2,25 @@ section{
     display: flex;
     flex-flow: row wrap;
 }
+
 div{
     margin-right: 50px;
 }
+
 .header {
     font-family: "Courier New";
     font-size: 12pt;
 }
+
 h1{
     font-family: "Courier New";
     font-size: 15pt;
 }
+
 #button{
     margin-top: 10px;
 }
+
 .btn {
     box-shadow:inset 0px 1px 3px 0px #91b8b3;
     background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
