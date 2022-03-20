@@ -38,11 +38,21 @@ window.onload = function(){
     var venus = generateSphere(90,20,20);
     var mars = generateSphere(80,20,20);
 
+    var jupiter = generateSphere(1500, 80, 80);
+    var saturn = generateSphere(1300, 80, 80);
+    var uranus = generateSphere(600, 80, 80);
+    var neptune = generateSphere(1000, 80, 80);
+
+
     scene.add(mercury);
     scene.add(venus);
     scene.add(mars);
     scene.add(earth);
     scene.add(sun);
+    scene.add(jupiter);
+    scene.add(saturn);
+    scene.add(uranus);
+    scene.add(neptune);
 
     var t = 0;
 
@@ -55,6 +65,10 @@ window.onload = function(){
         setDefaultRotation(mercury, t, 0.2*10,4000);
         setDefaultRotation(venus, t, 0.2*10, 5500);
         setDefaultRotation(mars, t, 0.08*10, 8000);
+        setDefaultRotation(jupiter, t, 0.04*10, 13000);
+        setDefaultRotation(saturn, t, 0.03*10, 17000);
+        setDefaultRotation(uranus, t, 0.02*10, 25000);
+        setDefaultRotation(neptune, t, 0.01*10, 30000);
 
         t += 0.01;
         controls.update();
